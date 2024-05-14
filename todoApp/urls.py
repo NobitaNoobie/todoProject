@@ -5,5 +5,6 @@ from . import views
 
 urlpatterns = [
     path('index/', views.index),
-    path('taskList/', views.taskList)
+    path('taskList/', views.taskList),
+    path('taskForm/', views.taskForm)
 ]

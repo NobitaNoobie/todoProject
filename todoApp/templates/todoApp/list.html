@@ -1,6 +1,27 @@
 <h3>To Do List:</h3>
 
-{% for task in allTasks %}
+<!-- *************changes after adding modelform ********************* -->
+<form method="post">
+    {%csrf_token%}
+    {{form}} 
+    <!-- 'form' was mentioned in context mapping in views.py -->
+    <input type="submit" name="Create Task">
+</form>
+<!-- * -->
+
+{% for task in tasks %} 
+<!-- 'tasks' were defined in the context mapping in views.py -->
+    <div>
+        <p> {{task}} </p>
+    </div>
+{% endfor %}
+<!-- ***************************************************************** -->
+
+
+
+
+{% for task in allTasks %} 
+<!-- 'allTasks' were defined in the context mapping in views.py -->
 
 <div>
     <p> {{task}} </p>
