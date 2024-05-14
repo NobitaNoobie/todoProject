@@ -98,13 +98,19 @@ DEFINITIONS:-----------------------------------------------
 1. HttpResponse v/s Render:
 HttpResponse returns an Http Response object while the Render will return an HTML page. 
 
-render is basically a wrapper around a HttpResponse which renders a template. It will take a template name as an argument, and then render this template with the given parameters and return an HttpResponse object.
+render is basically a wrapper around a HttpResponse which renders a template. It will take a template name as an argument, and then render this template with the given parameters and return an HttpResponse object. Combines a given template with a given context dictionary and returns an HttpResponse object with that rendered text.
 
 
 2. Context dictionary: Context mapping is used to help communicate between "views" and the frontend html file by exchanging keys, defined in the map. Whatever you want to display in the HTML frontend, be it Model object or Model form, you need to pass it to a context dictionary it to be able to map to frontend. Context dictionary/map is an attribute of the render() method.
 
 
 3. Model form: 
+
+
+4. Django templates: A template is a text file. It can generate any text-based format (HTML, XML, CSV, etc.).
+
+A template contains variables, which get replaced with values when the template is evaluated, and tags, which control the logic of the template.
+[Refer docs for syntax](https://docs.djangoproject.com/en/5.0/ref/templates/language/)
 
 
 

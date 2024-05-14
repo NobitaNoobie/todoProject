@@ -32,3 +32,7 @@ def taskForm(request):
 
     context = {"tasks": tasks, "form": form} #just pass the form in our template
     return render(request, "todoApp/list.html", context)
+
+def updateTask(request, pk):
+    task = Task.objects.get(id=pk)
+    return render(request, 'todoApp/update_task.html')

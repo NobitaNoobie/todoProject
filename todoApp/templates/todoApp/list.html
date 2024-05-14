@@ -12,6 +12,7 @@
 {% for task in tasks %} 
 <!-- 'tasks' were defined in the context mapping in views.py -->
     <div>
+        <a href="{% url 'update_task' task.id%}">Update</a>
         <p> {{task}} </p>
     </div>
 {% endfor %}
