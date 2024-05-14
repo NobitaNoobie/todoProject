@@ -7,7 +7,7 @@ from .forms import TaskForm
 # Create your views here.
 
 
-#note that this view will not render the model objects
+#note that this view will not render anything 
 def index(request):
     #return HttpResponse('Hello World')
     #we need to 'render' the templates here
