@@ -6,7 +6,7 @@ from .models import Task
 # Create your views here.
 
 
-#note that this view will not render anything 
+#note that this view will not render the model objects. It will just render the heading 
 def index(request):
     #return HttpResponse('Hello World')
     #we need to 'render' the templates here
